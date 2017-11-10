@@ -1,0 +1,9 @@
+The script alarm.sh is a simple alarm clock with snooze function. The wakeup
+time is requested of the user when the script is run and the snooze interval
+is set as a value in the file.
+
+The script buzzer.sh is called by alarm.sh to make the actual alarm sound. It
+uses the mpg123 utility, and is currently able to play a hardcoded music file.
+
+These scripts are in the public domain and free to use in any capacity for any purpose.
+It's not my fault if you're late for work though.
