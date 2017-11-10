@@ -4,6 +4,6 @@
 
 while :
 do
-  mpg123 ./Numbers-Daughter.mp3
+  mpg123 /home/zak/alarmclock/Numbers-Daughter.mp3
   sleep 1
 done
