@@ -7,6 +7,7 @@ NC='\033[0m'
 
 echo ""
 echo -e "Check for ${RED}HEADPHONES${NC} and ${RED}VOLUME${NC}."
+echo -e "24h clock formatting required."
 echo "What time should the alarm go off? (HH:MM)"
 read target
 
@@ -36,7 +37,7 @@ sleep $sec_until
 while :
 do
   echo -e "\nWake up!"
-  ./buzzer.sh & # note directory is hardcoded; that's not cool
+  /home/zak/alarmclock/buzzer.sh & # absolute paths are garbo yo
   bpid=$!
   disown $bpid                          # eliminates termination message
   read -n1 input
